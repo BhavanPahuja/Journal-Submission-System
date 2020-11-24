@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.addUserController">
+   <children>
+      <VBox prefHeight="571.0" prefWidth="851.0">
+         <children>
+            <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c2c8cd" height="571.0" stroke="WHITE" strokeType="INSIDE" width="863.0" />
+                  <TextField fx:id="firstName" layoutX="351.0" layoutY="116.0" prefHeight="25.0" prefWidth="150.0" promptText="Enter First Name" />
+                  <TextField fx:id="lastName" layoutX="351.0" layoutY="151.0" prefHeight="25.0" prefWidth="150.0" promptText="Enter Last Name" />
+                  <PasswordField fx:id="passW" layoutX="351.0" layoutY="211.0" promptText="Password" />
+                  <PasswordField fx:id="confirmPassW" layoutX="351.0" layoutY="245.0" promptText="Confirm Password" />
+                  <TextField fx:id="emailAdd" layoutX="351.0" layoutY="306.0" promptText="Email Address" />
+                  <TextField fx:id="confirmEmailAdd" layoutX="351.0" layoutY="339.0" promptText="Confirm Email Address" />
+                  <TextField fx:id="affil" layoutX="351.0" layoutY="407.0" promptText="Affiliation" />
+                  <ChoiceBox fx:id="accType" layoutX="351.0" layoutY="468.0" prefWidth="150.0" />
+                  <Button fx:id="confirmForm" layoutX="282.0" layoutY="469.0" mnemonicParsing="false" onAction="#errChecking" text="Confirm">
+                     <font>
+                        <Font name="System Bold" size="11.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="submitForm" layoutX="341.0" layoutY="521.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="72.0" text="Submit" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Button>
+                  <Button fx:id="cancelButton" layoutX="447.0" layoutY="521.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="72.0" text="Cancel" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#54789a" height="91.0" layoutY="14.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.5" width="863.0" />
+                  <Text layoutX="304.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Registration Form" textAlignment="CENTER">
+                     <font>
+                        <Font name="Century Gothic Bold" size="29.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="91.0" fitWidth="93.0" layoutX="42.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@JSS_Icon_3_-_iconfinder.com.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="nameLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="362.0" layoutY="183.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="15.0" prefWidth="130.0" textAlignment="CENTER" textFill="RED">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="passLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="328.0" layoutY="274.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="15.0" prefWidth="191.0" textAlignment="CENTER" textFill="RED">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="emailLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="328.0" layoutY="367.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="15.0" prefWidth="191.0" textAlignment="CENTER" textFill="RED">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+                  <Text layoutX="385.0" layoutY="464.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Account Type">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Text>
+                  <Label fx:id="affilLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="508.0" layoutY="412.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="15.0" prefWidth="191.0" textAlignment="CENTER" textFill="RED">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="accTypeLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="508.0" layoutY="469.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="24.0" prefWidth="191.0" textAlignment="CENTER" textFill="RED">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+                  <VBox alignment="TOP_RIGHT" layoutX="149.0" layoutY="119.0" prefHeight="315.0" prefWidth="198.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="First Name:" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name:" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Password:" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Confirm Password:" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="E-Mail:" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Confirm E-Mail:" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Affiliation:" />
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</StackPane>

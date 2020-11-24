@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchorPaneID" prefHeight="571.0" prefWidth="863.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.reviewerController">
+   <children>
+      <Rectangle fx:id="grayBackground" arcHeight="5.0" arcWidth="5.0" fill="#c2c8cd" height="617.0" stroke="#c2c8cd" strokeType="INSIDE" width="863.0" />
+      <Rectangle fx:id="redTop" arcHeight="5.0" arcWidth="5.0" fill="#b52e13" height="91.0" layoutY="17.0" stroke="#b52e13" strokeType="INSIDE" width="863.0" />
+      <Text fx:id="reviewertTitle" layoutX="370.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reviewer">
+         <font>
+            <Font name="Century Gothic Bold" size="29.0" />
+         </font>
+      </Text>
+      <Button fx:id="downloadJournal" layoutX="332.0" layoutY="164.0" mnemonicParsing="false" onAction="#onDownloadClick" prefHeight="30.0" prefWidth="200.0" text="Download Journal">
+         <font>
+            <Font name="Century Gothic Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="uploadFeedback" layoutX="332.0" layoutY="260.0" mnemonicParsing="false" onAction="#onUploadClick" prefHeight="30.0" prefWidth="200.0" text="Upload Feedback">
+         <font>
+            <Font name="Century Gothic Bold" size="12.0" />
+         </font>
+      </Button>
+      <ChoiceBox fx:id="decisionChoiceBox" layoutX="375.0" layoutY="364.0" prefHeight="30.0" prefWidth="117.0" />
+      <Button fx:id="submitDecision" contentDisplay="CENTER" layoutX="401.0" layoutY="412.0" mnemonicParsing="false" onAction="#onSubmitClick" prefHeight="30.0" prefWidth="65.0" text="Submit" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="signOut" alignment="CENTER" layoutX="401.0" layoutY="503.0" mnemonicParsing="false" onAction="#onSignOutClick" prefHeight="30.0" prefWidth="65.0" text="Sign Out">
+         <font>
+            <Font name="Century Gothic Bold" size="12.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="logoID" fitHeight="91.0" fitWidth="93.0" layoutX="101.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@JSS_Icon_3_-_iconfinder.com.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="resultOfEVal" fontSmoothingType="LCD" layoutX="381.0" layoutY="361.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Evaluation Result">
+         <font>
+            <Font name="Century Gothic Bold" size="13.0" />
+         </font>
+      </Text>
+      <VBox alignment="CENTER" layoutX="59.0" layoutY="230.0" prefHeight="22.0" prefWidth="750.0">
+         <children>
+            <Label fx:id="feedbackLabel" alignment="CENTER" contentDisplay="CENTER" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

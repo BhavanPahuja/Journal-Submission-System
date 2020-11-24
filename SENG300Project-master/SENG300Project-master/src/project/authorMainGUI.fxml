@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchorPaneID" prefHeight="571.0" prefWidth="863.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.authorMainController">
+   <children>
+      <Rectangle fx:id="grayBackground" arcHeight="5.0" arcWidth="5.0" fill="#3d4956" height="617.0" stroke="WHITE" strokeType="INSIDE" width="863.0" />
+      <Rectangle fx:id="whiteTop" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="91.0" layoutY="17.0" stroke="WHITE" strokeType="INSIDE" width="863.0" />
+      <Text fx:id="authorTitle" layoutX="375.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Author">
+         <font>
+            <Font name="Calibri Bold" size="50.0" />
+         </font>
+      </Text>
+      <Button fx:id="uploadJournal" layoutY="108.0" mnemonicParsing="false" prefHeight="507.0" prefWidth="448.0" style="-fx-background-color: #3d4956; -fx-border-color: white;" text="Upload&#10;Journal" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="48.0" />
+         </font>
+      </Button>
+      <Button fx:id="downloadFeedback" layoutX="448.0" layoutY="108.0" mnemonicParsing="false" prefHeight="507.0" prefWidth="414.0" style="-fx-background-color: #3d4956; -fx-border-color: white;" text="Download &#10;Feedback" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="48.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="logoID" fitHeight="91.0" fitWidth="93.0" layoutX="101.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@JSS_Icon_3_-_iconfinder.com.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="home" layoutX="655.0" layoutY="40.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="66.0" style="-fx-background-color: transparent;" text="Home" textFill="WHITE">
+         <font>
+            <Font name="Calibri" size="12.0" />
+         </font>
+         <graphic>
+            <ImageView fx:id="homeIcon" fitHeight="36.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@HomeIcon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="notifications" layoutX="712.0" layoutY="41.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="58.0" style="-fx-background-color: transparent;" text="Notifications" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP">
+         <font>
+            <Font name="Calibri" size="12.0" />
+         </font>
+         <graphic>
+            <ImageView fx:id="notificaitonsIcon" blendMode="DARKEN" fitHeight="35.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 100;">
+               <image>
+                  <Image url="@NotificationIcon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="logOut" layoutX="775.0" layoutY="41.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="20.0" style="-fx-background-color: transparent;" text="Log Out" textFill="WHITE">
+         <font>
+            <Font name="Calibri" size="12.0" />
+         </font>
+         <graphic>
+            <ImageView fx:id="logOutIcon" fitHeight="36.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@LogoutIcon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>
